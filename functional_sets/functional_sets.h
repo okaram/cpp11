@@ -27,7 +27,7 @@ Set set_intersection(Set s1, Set s2);
 // this function returns true if the predicate is true for every element in the set
 // notice that, since we can't get a list of all elements in the set, we need to use a 'grounding' set
 // in this case, we use [-1000,1000] as the grounding set
-bool foreach(Set s, Predicate p);
+bool forall(Set s, Predicate p);
 
 bool exists(Set s, Predicate p) ;
 

@@ -4,4 +4,6 @@ cpp11
 I'm trying out the new C++11 features. 
 
 I have the following examples:
-* (http://https://github.com/okaram/cpp11/tree/master/functional_sets "functional sets")
+* [functional sets](https://github.com/okaram/cpp11/tree/master/functional_sets) which uses lamdbas and closures 
+to implement sets as functions. A set is just a function that takes an int and returns true if the int is in the set, false otherwise.
+* 

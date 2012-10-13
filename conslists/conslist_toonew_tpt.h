@@ -27,13 +27,9 @@ private:
 	friend const ConsList<T>& cdr<>(const ConsList<T> &l);	
 };
 
-template<typename T>
-ConsList<T> cons(T car) {
-	return std::make_shared<ConsNode<T> > (car);
-}
 
 template<typename T>
-ConsList<T> cons(T car, const ConsList<T>& cdr) {
+ConsList<T> cons(T car, const ConsList<T>& cdr=ConsList<T>()) {
 	return std::make_shared<ConsNode<T> > (car,cdr);
 }
 

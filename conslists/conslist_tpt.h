@@ -51,7 +51,7 @@ T car(const ConsList<T>&l)
 template<class T>
 bool isEmpty(const ConsList<T>&l)
 {
-	return (bool)l.list;
+	return !(bool)l.list;
 }
 
 template<typename T>
@@ -63,7 +63,7 @@ const ConsList<T>& cdr(const ConsList<T>&l)
 template<class T>
 std::ostream& operator<<(std::ostream& o, const ConsList<T>&l)
 {
-	if(l)
+	if(!isEmpty(l))
 		o << car(l) << " " << cdr(l);
 	return o;
 }

@@ -51,7 +51,7 @@ T car(const ConsList<T>&l)
 template<class T>
 bool isEmpty(const ConsList<T>&l)
 {
-	return l;
+	return (bool)l.list;
 }
 
 template<typename T>

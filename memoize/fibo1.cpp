@@ -2,6 +2,16 @@
 #include <map>
 #include <functional>
 using namespace std;
+
+// factorial function
+unsigned factorial(unsigned n)
+{
+	if(n==0)
+		return 1;
+	else
+		return n*factorial(n-1);
+}
+
 // naive fibonacci number function
 unsigned fibo(unsigned n)
 {
